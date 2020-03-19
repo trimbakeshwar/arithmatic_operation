@@ -14,4 +14,8 @@ function arithmatic_computation_two(){
 }
 result="$( arithmatic_computation_two $(($a,$b,$c)) )"
 
+function arithmatic_computation_three(){
+	echo "$(( $c+$a/$b ))"
+}
+result="$( arithmatic_computation_three $(($a,$b,$c)) )"
 
