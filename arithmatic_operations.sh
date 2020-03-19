@@ -9,4 +9,9 @@ function arithmatic_computation_one(){
 }
 result="$( arithmatic_computation_one $(($a,$b,$c)) )"
 
+function arithmatic_computation_two(){
+   echo "$(( $a*$b+$c ))"
+}
+result="$( arithmatic_computation_two $(($a,$b,$c)) )"
+
 
