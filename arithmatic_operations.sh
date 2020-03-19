@@ -49,4 +49,24 @@ done
 	echo ${array[@]}
 }
 result="$( sorting_array_desending ${array[@]} )"
-echo  "desending $result"
+	echo  "desending $result"
+function sorting_array_assending(){
+temp=0
+for (( i=0; i<4; i++ ))
+do
+   for (( j=0; j<4; j++ ))
+   do
+		if [[ ${array[i]} -lt ${array[j]} ]]
+ 		then
+  			temp=${array[$j]}
+  			array[$j]=${array[$i]}
+  			array[$i]=$temp
+   	fi
+   done
+done
+	echo ${array[@]}
+}
+
+result="$( sorting_array_assending ${array[@]} )"
+	echo  "asending= $result"
+
