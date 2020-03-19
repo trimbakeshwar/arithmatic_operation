@@ -19,3 +19,8 @@ function arithmatic_computation_three(){
 }
 result="$( arithmatic_computation_three $(($a,$b,$c)) )"
 
+function arithmatic_computation_four(){
+	echo "$(( $a%$b+$c ))"
+}
+result="$( arithmatic_computation_four $(($a,$b,$c)) )"
+
