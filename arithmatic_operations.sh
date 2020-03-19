@@ -26,3 +26,9 @@ storage[$((count++))]="$( arithmatic_computation_four $(($a,$b,$c)) )"
 
 	echo "${!storage[@]}  ${storage[@]}"
 
+for (( i=0; i<4; i++ ))
+do
+	array[i]=${storage[$i]}
+	echo "${array[i]}"
+done
+
